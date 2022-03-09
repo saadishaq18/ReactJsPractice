@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 
 class Counter extends Component {
     state ={
-    count:0
+    count:this.props.counter.value
     };
 
     handleCount =() =>{
@@ -19,6 +19,7 @@ class Counter extends Component {
         return (<div>
             <span className={classes}>{this.formatCount()}</span>
             <button onClick = {this.handleCount}className="btn btn-secondary">Increment</button>
+            <button onClick= {()=>this.props.onDelete(this.props.counter.key)}className="btn btn-dark m-2">Delete</button>
             </div>);
     }
     formatCount(){
