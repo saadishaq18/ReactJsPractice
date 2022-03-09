@@ -13,8 +13,8 @@ class Counter extends Component {
     
     render() { 
 
-        let classes="badge m-2 bg-";
-        classes += this.state.count===0 ? "warning": "primary";
+        let classes="badge bg-";
+        classes += this.state.count===0 ? "warning m-2": "primary m-3";
         
         return (<div>
             <span className={classes}>{this.formatCount()}</span>

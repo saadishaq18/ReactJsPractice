@@ -3,13 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Counter from './component/counter';
+import Counters from './component/counters';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <Counter/>
+    <Counters />
   </React.StrictMode>,
   document.getElementById('root')
 );
